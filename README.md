@@ -27,6 +27,14 @@ self.headerBar?.getProgressValue({ progress in
 ![AVLighterStickyHeaderView](https://raw.githubusercontent.com/angelvasa/AVLighterStickyHeaderView/master/demo_recording.gif)
 
 
+
+You can easily install using pod
+
+```
+pod 'AVLighterStickyHeaderView', '~> 0.2'
+```
+
+
 -- Hope you like it. 
 
 **If you have any query or suggestion you can always contact me at vasaangel91@gmail.com**
