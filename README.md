@@ -7,6 +7,7 @@
 **example usage:** 
 
 --You can use as facebook navigation controller (show hide navigation controller on scroll)
+
 --You can use as WhatsApp user detail screen 
 
 **Totally Customizable**
@@ -18,6 +19,7 @@ self.headerBar?.getProgressValue({ progress in
         })
 ```
 --You will get progress 1 when it's fully open to maximum height
+
 --progress 0 when it's fully collapsed to minimnum height
 
 ![AVLighterStickyHeaderView](https://raw.githubusercontent.com/angelvasa/AVLighterStickyHeaderView/master/demo_recording.gif)
