@@ -10,6 +10,8 @@
 
 --You can use as WhatsApp user detail screen 
 
+-- Expand - collapse Navigation bar
+
 **Totally Customizable**
 
 ```

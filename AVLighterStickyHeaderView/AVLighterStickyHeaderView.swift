@@ -1,6 +1,6 @@
 //
-//  AVMaterialNavigationBar.swift
-//  AVMaterialNavigationBar
+//  AVLighterStickyHeaderView.swift
+//  AVLighterStickyHeaderView
 //
 //  Created by Angel Vasa on 13/04/16.
 //  Copyright © 2016 Angel Vasa. All rights reserved.
