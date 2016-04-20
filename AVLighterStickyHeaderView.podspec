@@ -9,12 +9,12 @@
 
 Pod::Spec.new do |spec|
 spec.name         = 'AVLighterStickyHeaderView'
-spec.version      = '0.1'
+spec.version      = '0.2'
 spec.license      = { :type => 'MIT' }
 spec.homepage     = 'https://github.com/angelvasa/AVLighterStickyHeaderView'
 spec.authors      = { 'Angel Vasa' => 'vasaangel91@gmail.com' }
 spec.summary      = "Sticky header view inspired from android coordinate layout"
-spec.source       = { :git => "https://github.com/angelvasa/AVLighterStickyHeaderView.git", :tag => "0.1" }
+spec.source       = { :git => "https://github.com/angelvasa/AVLighterStickyHeaderView.git", :tag => "0.2" }
 spec.source_files = "AVLighterStickyHeaderView", "AVLighterStickyHeaderView/*.{swift}"
 spec.platform = :ios
 spec.ios.deployment_target = '8.0'
