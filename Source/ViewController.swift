@@ -34,21 +34,21 @@ class ViewController: UIViewController {
 //MARK: Table delegate and datasource
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = table?.dequeueReusableCellWithIdentifier("myCell",forIndexPath: indexPath)
+        let cell = table?.dequeueReusableCell(withIdentifier: "myCell",for: indexPath)
         return cell!
     }
     
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 1020
     }
 }
@@ -70,11 +70,11 @@ extension ViewController {
 
 // MARK: Actions
 extension ViewController {
-    @IBAction func backButtonAction(sender: AnyObject) {
+    @IBAction func backButtonAction(_ sender: AnyObject) {
         print("Put back event")
     }
     
-    @IBAction func menuButtonAction(sender: AnyObject) {
+    @IBAction func menuButtonAction(_ sender: AnyObject) {
         print("Put menu event")
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 @IBDesignable
-public class AVLighterStickyHeaderView: UIView {
+open class AVLighterStickyHeaderView: UIView {
 
     
     @IBInspectable
@@ -18,24 +18,24 @@ public class AVLighterStickyHeaderView: UIView {
     @IBOutlet weak var scrollView: UIScrollView?
     var gProgressValue: progressValueHandler?
     
-    override public func willMoveToSuperview(newSuperview: UIView?) {
-        self.scrollView?.addObserver(self, forKeyPath: "contentOffset", options: NSKeyValueObservingOptions.New, context: nil)
+    override open func willMove(toSuperview newSuperview: UIView?) {
+        self.scrollView?.addObserver(self, forKeyPath: "contentOffset", options: NSKeyValueObservingOptions.new, context: nil)
         self.scrollView?.contentInset = UIEdgeInsetsMake((self.scrollView?.contentInset.top)!, 0, 0, 0)
         self.scrollView?.scrollIndicatorInsets = (self.scrollView?.contentInset)!;
     }
     
     
     
-    override public func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
-        updateView((change!["new"]?.CGPointValue)!)
+    override open func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        updateView(((change![.newKey] as AnyObject).cgPointValue)!)
     }
     
     
     var currentOffset: CGPoint?
-    func updateView(offset: CGPoint) {
+    func updateView(_ offset: CGPoint) {
         currentOffset = offset
         if (currentOffset!.y > -minimumHeight){
-            currentOffset = CGPointMake(currentOffset!.x, -minimumHeight)
+            currentOffset = CGPoint(x: currentOffset!.x, y: -minimumHeight)
         }
         
         self.frame.origin.y = -currentOffset!.y-(self.scrollView?.contentInset.top)!
@@ -47,7 +47,7 @@ public class AVLighterStickyHeaderView: UIView {
     }
     
     
-    func getProgressValue(progressValue: progressValueHandler) {
+    func getProgressValue(_ progressValue: @escaping progressValueHandler) {
         gProgressValue = progressValue
     }
     

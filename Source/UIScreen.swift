@@ -11,10 +11,10 @@ import UIKit
 
 extension UIScreen {
     class var screenWidth: CGFloat {
-        return UIScreen.mainScreen().bounds.size.width
+        return UIScreen.main.bounds.size.width
     }
     
     class var screenHeight: CGFloat {
-        return UIScreen.mainScreen().bounds.size.height
+        return UIScreen.main.bounds.size.height
     }
 }

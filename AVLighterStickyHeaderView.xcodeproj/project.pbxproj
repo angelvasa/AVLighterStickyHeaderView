@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		B13CFDE11CC7572D00E5E181 /* AVLighterStickyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CFDDA1CC7572D00E5E181 /* AVLighterStickyHeaderView.swift */; };
 		B13CFDEC1CC7577000E5E181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B13CFDE71CC7577000E5E181 /* Assets.xcassets */; };
-		B13CFDED1CC7577000E5E181 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CFDE81CC7577000E5E181 /* back.png */; };
-		B13CFDEE1CC7577000E5E181 /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CFDE91CC7577000E5E181 /* hamburger.png */; };
-		B13CFDEF1CC7577000E5E181 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = B13CFDEA1CC7577000E5E181 /* header.png */; };
 		B13CFDFA1CC7595D00E5E181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13CFDF21CC7595D00E5E181 /* AppDelegate.swift */; };
 		B13CFDFB1CC7595D00E5E181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13CFDF31CC7595D00E5E181 /* LaunchScreen.storyboard */; };
 		B13CFDFC1CC7595D00E5E181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13CFDF51CC7595D00E5E181 /* Main.storyboard */; };
@@ -27,9 +24,6 @@
 		B13CFDA11CC7550000E5E181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B13CFDDA1CC7572D00E5E181 /* AVLighterStickyHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVLighterStickyHeaderView.swift; sourceTree = "<group>"; };
 		B13CFDE71CC7577000E5E181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B13CFDE81CC7577000E5E181 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		B13CFDE91CC7577000E5E181 /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
-		B13CFDEA1CC7577000E5E181 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		B13CFDF21CC7595D00E5E181 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B13CFDF41CC7595D00E5E181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B13CFDF61CC7595D00E5E181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,9 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				B13CFDE71CC7577000E5E181 /* Assets.xcassets */,
-				B13CFDE81CC7577000E5E181 /* back.png */,
-				B13CFDE91CC7577000E5E181 /* hamburger.png */,
-				B13CFDEA1CC7577000E5E181 /* header.png */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -146,11 +137,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Angel Vasa";
 				TargetAttributes = {
 					B13CFD7B1CC754FF00E5E181 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -177,9 +169,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13CFDEE1CC7577000E5E181 /* hamburger.png in Resources */,
-				B13CFDED1CC7577000E5E181 /* back.png in Resources */,
-				B13CFDEF1CC7577000E5E181 /* header.png in Resources */,
 				B13CFDFC1CC7595D00E5E181 /* Main.storyboard in Resources */,
 				B13CFDFB1CC7595D00E5E181 /* LaunchScreen.storyboard in Resources */,
 				B13CFDEC1CC7577000E5E181 /* Assets.xcassets in Resources */,
@@ -236,8 +225,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -282,8 +273,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -302,6 +295,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -311,10 +305,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AVLighterStickyHeaderView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -322,10 +318,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AVLighterStickyHeaderView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
